@@ -113,6 +113,9 @@ a {
 /* #region order-service */
 .order-service{
     background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-service/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     text-align: center;
     padding: 188px 0;
 }
