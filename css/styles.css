@@ -186,10 +186,6 @@ a {
 }
 .value-card {
     width: calc((100% - 72px)/4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
     margin-bottom: 8px;
 }
 .value-cards .list-header {
@@ -237,19 +233,25 @@ a {
     justify-content: center;
     gap: 24px;
 }
-.member-socials li {
+.member-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px;
+    height: 100%;
+    width: 100%;
     border: none;
-    border-radius: 50px;
+    border-radius: 50%;
     background-color:#4D5AE5;
     transition: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.member-socials li:hover {
+.member-social-link:hover,
+.member-social-link:focus {
     background-color: #404BBF;
 }
-.member-social-link {
+.member-social-vector {
     display: block;
     fill: #F4F4FD;
 }
