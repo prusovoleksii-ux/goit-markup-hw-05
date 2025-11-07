@@ -196,6 +196,11 @@ a {
     border: 1px solid #8E8F99;
     border-radius: 4px;
     background-color: #F4F4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
 }
 
 
