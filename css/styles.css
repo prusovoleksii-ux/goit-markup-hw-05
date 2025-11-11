@@ -369,7 +369,6 @@ h2 {
 .footer-text {
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    margin: 16px 0;
     width: 264px;
 }
 .footer .logo {
@@ -378,7 +377,6 @@ h2 {
 }
 footer>.container {
     display: flex;
-    gap: 120px;
     align-items: baseline;
 }
 .info {
