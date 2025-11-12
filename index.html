@@ -358,24 +358,46 @@
             
         <div class="modal-overlay is-open">
             <div class="modal">
+                <button type="button" class="form-exit-btn">
+                    <svg class="form-exit-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-btn"></use>
+                    </svg>
+                </button>
+                <p class="contacts-form-header">Leave your contacts and we will call you back</p>
                 <form class="contacts-form">
-                    <p class="contacts-form-header">Leave your contacts and we will call you back</p>
-                    <label class="contacts-label">
-                        Name
-                        <input type="text" name="name">
-                    </label>
-                    <label class="contacts-label">
-                        Phone
-                        <input type="tel" name="phone">
-                    </label>
-                    <label class="contacts-label">
-                        Email
-                        <input type="email" name="email">
-                    </label>
-                    <label class="contacts-label">
-                        Comment
-                        <input type="text" name="comment">
-                    </label>
+                    <div class="form-field">
+                        <label class="contacts-label" for="name">Name</label>
+                        <div class="input-wrapper">
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label class="contacts-label" for="phone">Phone</label>
+                        <div class="input-wrapper">
+                            <input type="tel" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label class="contacts-label" for="email">Email</label>
+                        <div class="input-wrapper">
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label class="contacts-label" for="comment">Comment</label>
+                        <div class="input-wrapper">
+                            <textarea name="comment" rows="5" cols="" placeholder="Text input"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <div class="terms-container">
+                            <input type="checkbox" name="terms" value="privacy-policy" required>
+                            <label class="contacts-label" for="privacy-policy">
+                                I accept the terms and conditions of the <a href="" class="terms-link">Privacy Policy</a>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="contact-submit-btn">Send</button>
                 </form>
             </div>
         </div>
