@@ -400,8 +400,20 @@
                     </div>
                     <div class="form-field">
                         <div class="terms-container">
-                            <input id="terms" type="checkbox" name="terms" value="privacy-policy" required>
+                            <input  id="terms"
+                                    class="visually-hidden" 
+                                    type="checkbox" 
+                                    name="terms" 
+                                    value="true" 
+                                    required>
                             <label class="contacts-label" for="privacy-policy">
+                                <span class="terms-checkbox">
+                                    <svg    class="checkbox-icon" 
+                                            width="10"       
+                                            height="8">
+                                        <use href="./images/icons.svg#icon-checkbox"></use>
+                                    </svg>
+                                </span>
                                 I accept the terms and conditions of the <a href="" class="terms-link">Privacy Policy</a>
                             </label>
                         </div>
