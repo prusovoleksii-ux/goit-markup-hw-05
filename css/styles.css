@@ -575,22 +575,13 @@ footer>.container {
 
 
 
-.input-wrapper,
-.input-wrapper {
-    width: 360px;
+
+input, textarea {
+    background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding: 8px 16px;
-    display: flex;
-    gap: 4px;
-
-}
-input, textarea {
-    background-color: #FCFCFC;
-    border: none;
-    padding: 0;
     margin: 0;
-    width: 100%;
     font-weight: 400;
     font-size: 12px;
     line-height: 117%;
@@ -600,6 +591,10 @@ input, textarea {
 input:focus,
 textarea:focus {
     outline: none;
+    border-color:#404BBF;
+}
+input:focus+svg {
+    fill:#404BBF;
 }
 
 .contacts-label {
@@ -651,7 +646,7 @@ textarea::placeholder {
 .terms-checkbox:active {
     background-color: #404bbf;
 }
-input[type="checkbox"]:checked>.terms-checkbox {
+input[type="checkbox"]:checked+.contacts-label>.terms-checkbox {
     background-color: #404BBF;
     border: none;
 }
