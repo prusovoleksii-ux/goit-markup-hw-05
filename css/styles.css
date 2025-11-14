@@ -377,6 +377,7 @@ h2 {
 }
 footer>.container {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
 }
 .info {
@@ -396,9 +397,7 @@ footer>.container {
     justify-content: center;
     gap: 16px;
 }
-.footer-socials-container {
-    margin-right: 80px;
-}
+
 .footer-social-link {
     padding: 8px;
     width: 100%;
@@ -646,16 +645,19 @@ textarea::placeholder {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-icon {
-    fill: #F4F4FD;
+    fill: #FFFFFF;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .terms-checkbox:active {
     background-color: #404bbf;
 }
-input[type="checkbox"]:checked>span {
+input[type="checkbox"]:checked>.terms-checkbox {
     background-color: #404BBF;
     border: none;
 }
-
+input[type="checkbox"]:checked>.checkbox-icon {
+    fill: #F4F4FD;
+}
 
 .terms-link {
     line-height: 133%;
