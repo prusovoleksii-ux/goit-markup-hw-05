@@ -392,6 +392,9 @@ footer>.container {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
+.footer-socials-container {
+    margin-right: 80px;
+}
 .footer-socials {
     display: flex;
     flex-direction: row;
@@ -465,7 +468,6 @@ footer>.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
 
     transition: background-color 250ms ease-in-out;
 
@@ -538,12 +540,6 @@ footer>.container {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
 }
 
 .form-exit-btn {
@@ -629,6 +625,7 @@ input:focus+.input-icon {
 
 .comment-field {
     margin-bottom: 16px;
+    display: block;
 }
 .contact-comment {
     width: 100%;
@@ -660,10 +657,6 @@ input:focus+.input-icon {
 }
 
 .terms-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
     margin-bottom: 24px;
 }
 
@@ -713,12 +706,11 @@ input[type="checkbox"]:checked+.contacts-label>.terms-checkbox {
 }
 
 .contact-submit-btn {
+    display: block;
     border: none;
     border-radius: 4px;
-    padding: 16px 32px;
     min-width: 169px;
     height: 56px;
-    margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
