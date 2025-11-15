@@ -424,9 +424,9 @@ footer>.container {
     fill: #F4F4FD;
 }
 
-.subscribe-container {
+.footer-email-form {
     display: flex;
-    align-items: end;
+    align-items: start;
     gap: 24px;
 }
 
